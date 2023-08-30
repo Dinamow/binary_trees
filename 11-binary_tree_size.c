@@ -13,13 +13,21 @@ size_t binary_tree_size(const binary_tree_t *tree)
 	if (tree == NULL)
 		return (0);
 	result = count(tree, result);
-	return (result - 1);
+	return (result);
 }
 
+/**
+ * count - count the size
+ *
+ * @tree: the node
+ * @result: the count
+ *
+ * Return: the numbers
+ */
 size_t count(const binary_tree_t *tree, size_t result)
 {
 	if (tree == NULL)
-		return (0);
+		return (result);
 	result = count(tree->left, result);
 	result = count(tree->right, result);
 	result++;
