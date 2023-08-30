@@ -1,6 +1,6 @@
 #include "binary_trees.h"
 
- size_t count(const binary_tree_t *tree, size_t result);
+size_t count(const binary_tree_t *tree, size_t result);
 /**
  * binary_tree_height - getting tree size
  *
@@ -32,5 +32,5 @@ size_t count(const binary_tree_t *tree, size_t result)
 	result = count(tree->left, result);
 	result = count(tree->right, result);
 	result++;
-	return(result);
+	return (result);
 }
