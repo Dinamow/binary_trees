@@ -3,7 +3,7 @@
 /**
  * binary_tree_sibling - get the sib
  *
- * @node - the req node
+ * @node: the req node
  *
  * Return: sib node of the node
  */
